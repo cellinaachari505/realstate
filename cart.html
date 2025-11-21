@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eterna | Cart</title>
+
+    <!-- Link cart CSS -->
+    <link rel="stylesheet" href="./assets/css/cart.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="index.html" class="logo">Eterna</a>
+
+        <div class="nav-icons">
+            <a href="cart.html" class="cart-btn">Cart</a>
+            <a href="login.html" class="login-btn">Login</a>
+        </div>
+    </header>
+
+    <!-- CART PAGE -->
+    <section class="cart-page">
+        <h1>Your Shopping Cart</h1>
+
+        <!-- If cart is empty -->
+        <div class="empty-message">
+            <p>Your cart is currently empty 🛒</p>
+            <a href="product.html" class="shop-btn">Shop Now</a>
+        </div>
+
+        <!-- Sample Cart Item (you can replace later) -->
+        <div class="cart-item">
+            <img src="./assets/images/sample-product.jpg" alt="Product">
+
+            <div class="item-details">
+                <h3>Sample Product Name</h3>
+                <p class="price">$49.99</p>
+
+                <div class="quantity-box">
+                    <button>-</button>
+                    <input type="text" value="1">
+                    <button>+</button>
+                </div>
+
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+
+        <!-- Total Section -->
+        <div class="total-box">
+            <p>Total: <span>$49.99</span></p>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+
+    </section>
+
+</body>
+</html>
