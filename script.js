@@ -1,4 +1,4 @@
-// LOGIN PAGE JAVASCRIPT
+
 
 let loginForm = document.getElementById("loginForm");
 
@@ -41,7 +41,6 @@ if (loginForm) {
 
 
 
-// SIGNUP PAGE JAVASCRIPT
 
 let signupForm = document.getElementById("signupForm");
 
@@ -52,7 +51,7 @@ if (signupForm) {
         let email = document.getElementById("signupEmail").value;
         let password = document.getElementById("signupPassword").value;
 
-        // get users from localStorage
+        
         let users = localStorage.getItem("users");
 
         if (users === null) {
@@ -61,24 +60,24 @@ if (signupForm) {
             users = JSON.parse(users);
         }
 
-        // check if email already exists
+        
         for (let i = 0; i < users.length; i++) {
             if (users[i].email === email) {
-                alert("Email already exists ❌");
+                alert("Email already exists ");
                 return;
             }
         }
 
-        // add new user
+       
         users.push({
             email: email,
             password: password
         });
 
-        // save back to storage
+        
         localStorage.setItem("users", JSON.stringify(users));
 
-        alert("Signup successful! Please login ✅");
+        alert("Signup successful! Please login ");
         window.location.href = "login.html";
     });
 }
