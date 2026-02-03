@@ -28,10 +28,10 @@ if (loginForm) {
         }
 
         if (validUser) {
-            alert("Login successful ✅");
+            alert("Login successful ");
             window.location.href = "index.html";
         } else {
-            alert("Wrong email or password ❌");
+            alert("Wrong email or password ");
         }
     });
 }
